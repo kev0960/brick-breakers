@@ -701,7 +701,7 @@ Game.prototype.draw = function() {
     world.fillStyle = 'white';
     world.fillRect(0, 0, this.brick_width * 10 + 100, this.brick_height * 10 + 100);
   }
-  stat_level.textContent = 'Level : ' + (this.current_level + 1) + ' // Num Balls : 1 + this.total_balls + ' + '// Score : ' + this.score;
+  stat_level.textContent = 'Level : ' + (this.current_level + 1) + ' // Num Balls : '  + this.total_balls +  ' // Score : ' + this.score;
   world.strokeStyle = 'black';
   world.strokeRect(0, 0, this.brick_width * this.num_brick_w, this.brick_height * this.num_brick_h);
   if (!this.stage_begin && this.user_select_path && !this.is_game_over) {

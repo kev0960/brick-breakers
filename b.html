@@ -1,0 +1,38 @@
+<html>
+
+<body>
+  <div align='center'>
+    <p id>Brick Breakers</p>
+    <p id='leader_board'>Brick Breakers</p>
+    <p id='stat_level'>Level : 1 // Num Balls : 1</p>
+    <canvas id='world' width=240 height=160></canvas>
+    <div>
+      <button id='show_leaders'>Leader Board</button>
+      <button id='force_end'>End Stage</button>
+      <button id='show_help'>Help</button>
+    </div>
+  </div>
+
+</body>
+<script>
+  var cv_world = document.getElementById('world');
+  var stat_level = document.getElementById('stat_level');
+  var leader_board = document.getElementById('leader_board');
+  var show_leaders = document.getElementById('show_leaders');
+  var show_help = document.getElementById('show_help');
+  var force_end = document.getElementById('force_end');
+</script>
+<style type="text/css">
+  body {
+    font-family: Verdana;
+    font-size: 10px;
+  }
+
+  #show_leaders {
+    margin-top: 20px;
+  }
+</style>
+<script type='text/javascript' src='b2.js'></script>
+<script type='text/javascript' src='b.js'></script>
+
+</html>
